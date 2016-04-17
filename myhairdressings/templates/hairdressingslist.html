@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "index.html" %}
+{% block content %}
+<h2>
+    Peluquerias:
+</h2>
+    {% for hairdressings in HairdressingList %}
+        <a href="{{ hairdressings.id }}">&bull; {{ hairdressings.name }}</a><br />
+    {% empty %}No hay peluquerías asociadas.
+    {% endfor %}
+{% endblock	%}

@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "index.html" %}
+{% block content %}
+<h2>
+    Mis Citas:
+</h2>
+    {% for citation in CitationsList %}
+        {% if citation.id_user == user %}
+        <div class="citation">
+            <b>Peluquería: </b> {{ citation.id_schedule.hairdresser.hairdressing.name }} <br />
+            <b>Peluquero: </b> {{ citation.id_schedule.hairdresser.name }} <br />
+            <b>Dia: </b> {{ citation.id_schedule.get_day_display }} <br />
+            <b>Hora: </b> {{ citation.id_schedule.get_hour_display }}
+        </div>
+        {% endif %}
+    {% empty %}No hay citas
+    {% endfor %}
+{% endblock	%}

@@ -1,13 +1,53 @@
-body{background-color: red;}
+body{font-family: Verdana; font-size:12px;}
 
-#wrapper {}
+a{color:#069;}
 
-#header {top:0; border:solid 1px #000;}
+h1{font-size:24px;}
 
-#header-title{border:solid 1px #000;}
+h2{font-size:18px;}
 
-#login-form{border:solid 1px #000;}
+#wrapper {padding: 10px;}
 
-#content-left{border:solid 1px #000;}
+#header {padding:8px;height:40px; border-bottom:solid 1px #CCC;}
 
-#content{border:solid 1px #000;}
+#header-title{float:left;}
+
+#login-form{float:right;width:400px; font-size:15px;}
+
+#content{padding:10px;float:left;height: 100%;}
+
+#content-left{height: 100%; text-align:left; float:left; width: 200px; margin-right:20px; padding:3px;  border-right:solid 1px #CCC;}
+
+#main {margin-top:50px; height: 100%;}
+
+/* Classes */
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: green; /* Green */
+}
+
+.hr{border-bottom: solid 1px #CCC;width: 100%; margin-top: 15px;margin-bottom: 15px;}
+
+.citation{
+    border-bottom: solid 1px #CCC;
+    margin-top: 10px;
+    padding:15px;
+    padding-bottom:10px;
+    background-color: #EFEFEF;
+}
+
+.citation:hover{
+    background-color: #CCC;
+    border-bottom: solid 1px #333;
+}

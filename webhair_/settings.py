@@ -41,7 +41,7 @@ INSTALLED_APPS = (
 )
 
 TEMPLATES_DIRS = (
-    os.path.join(os.path.dirname(__file__), '../templates'),
+    os.path.join(os.path.dirname(__file__), '/templates'),
 )
 
 MIDDLEWARE_CLASSES = (

@@ -2,51 +2,65 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from datetime import date
-from django.utils import timezone
 
 # Create your models here.
 
 class AdminHairDressing(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=150)
     street = models.CharField(max_length=200)
     number = models.IntegerField(null=False)
+    zipcode = models.TextField(blank=True, null=True)
     city = models.CharField(max_length=100)
     phone = models.CharField(max_length=12)
+    description = models.TextField(help_text='Descriu informació necessaria de la perruqueria')
     url = models.URLField(blank=True, null=True)
-    user = models.ForeignKey(User, default=1)
-    publish_date = models.DateField(default=date.today)
+    publish_date = models.DateField(auto_now=True)
+
+    def get_absolute_url(self):
+        return reverse('hairdressing_detail', kwargs={'pk': self.pk})
 
 
-    def __unicode__(self):
-        return u"%s" % self.name
+    def __str__(self):
+        return self.name
 
-
-class client(models.Model):
-
-    name = models.TextField()
-    street = models.TextField(blank=True, null=True)
-    number = models.IntegerField(blank=True, null=True)
-    city = models.TextField(default="")
-    zipcode = models.TextField(blank=True, null=True)
+'''
+class Clients(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
     phone = models.CharField(max_length=9)
-    schedule = models.TextField()
-    description = models.TextField()
-    price = models.DecimalField('Euro amount', max_digits=8, decimal_places=2, blank=True, null=True)
-    url = models.URLField(blank=True, null=True)
-    user = models.ForeignKey(User, default=1)
-    publish_date = models.DateField(default=date.today)
+
+    def __str__(self):
+        return self.name
+'''
 
 
-'''class Review (models.Model):
-    RATING_CHOICES    =    ((1,    'one'),    (2,    'two'),    (3,    'three'),    (4,    'four'),    (5,    'five'))
-    rating    =    models.PositiveSmallIntegerField('Rating(stars)',    blank=False,    default=3,
-    choices=RATING_CHOICES)
-    comment    =    models.TextField(blank=True,    null=True)
-    user    =    models.ForeignKey(User,    default=1
-    )
-date    =    models.DateField(default=date.today)
-class    Meta:
-    abstract    =    True
+class Hairdresser(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    speciality = models.TextField(max_length=100, help_text= ' Redacta les teves funcionalitats')
+    hairdressing = models.ForeignKey(AdminHairDressing, related_name='hairdressers')
 
-class HairdressingReview(Review):
-    hairdressing    =    models.ForeignKey(AdminHairDressing) '''
+    def __str__(self):
+        return self.name
+
+
+class Schedule(models.Model):
+    id = models.AutoField(primary_key=True)
+    DAY_CHOICES = ((1, 'Lunes'), (2, 'Martes'), (3, 'Miercoles'), (4, 'Jueves'), (5, 'Viernes'), (6, 'Sabado'))
+    day = models.PositiveSmallIntegerField('Día', blank=False, default=1, choices=DAY_CHOICES)
+    HOUR_CHOICES = ((9, '09:00h'),(10, '10:00h'),(11, '11:00h'),(12, '12:00h'),(13, '13:00h'),(14, '14:00h'),(15, '15:00h'),
+                    (16, '16:00h'),(17, '17:00h'),(18, '18:00h'),(19, '19:00h'),(20, '20:00h'),)
+    hour = models.PositiveSmallIntegerField('Hora', blank=False, default=1, choices=HOUR_CHOICES)
+    hairdresser = models.ForeignKey(Hairdresser, related_name='schedule')
+
+    def __str__(self):
+        return self.hairdresser.name + ' - ' + self.get_day_display() + ' - ' + self.get_hour_display()
+
+class Citation(models.Model):
+    id = models.AutoField(primary_key=True)
+    id_user = models.ForeignKey(User, related_name='citation')
+    id_schedule = models.ForeignKey(Schedule, related_name='citation')
+
+    def __str__(self):
+        return 'Cita ' + str(self.id)

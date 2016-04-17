@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "index.html" %}
+{% block content %}
 
-</body>
-</html>
+<h2>Datos del Peluquera/o:</h2>
+
+<ul>
+	<li>Nombre: {{ hairdresser.name }}</li>
+    <li>Especialidad: {{ hairdresser.speciality }}</li>
+
+</ul>
+
+<h2>Horario Disponible:</h2>
+<ul>
+
+</ul>
+
+<form action="{% url 'citation_create' %}" method="POST">
+<select name="id">
+{% for schedule in hairdresser.schedule.all %}
+    <option value="{{ schedule.id }}">
+        {{ schedule.get_day_display }}
+        {{schedule.get_hour_display}}
+    </option>
+{% empty %}<li>No hay horarios para este peluquero.</li>
+{% endfor %}
+</select> <br /><br />
+<input class="button" type="submit" value="Pedir Cita">
+{% csrf_token %}
+</form>
+
+<div class="hr"></div>
+
+<a href="javascript:window.history.back()">Volver</a>
+
+
+{% endblock %}

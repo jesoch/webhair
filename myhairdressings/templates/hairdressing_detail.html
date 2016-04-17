@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>
+	{{adminhairdressing.name}}
+
+</h1>
+<h2>Datos de la Peluquería:</h2>
+
+<ul>
+	<li>Nombre: {{ adminhairdressing.name }}</li>
+    <li>Dirección: {{ adminhairdressing.street }}, {{ adminhairdressing.number }}</li>
+    <li>Ciudad: {{ adminhairdressing.city }}</li>
+    <li>Teléfono: {{ adminhairdressing.phone }}</li>
+
+</ul>
+<h2>Peluqueros:</h2>
+<ul>
+{% for hairdresser in adminhairdressing.hairdressers.all %}
+		<li><a href="{% url 'hairdresser_detail' adminhairdressing.id hairdresser.id %}">
+			{{ hairdresser.name }}
+			</a></li>
+	{% empty %}<li>No hay peluqueros en esta peluquería.</li>
+	{% endfor %}
+</ul>
+
+
+<a href="javascript:window.history.back()">Volver</a>
+
+
+{% endblock %}
+
