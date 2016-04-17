@@ -10,10 +10,10 @@ class AdminHairDressing(models.Model):
     name = models.CharField(max_length=150)
     street = models.CharField(max_length=200)
     number = models.IntegerField(null=False)
-    zipcode = models.TextField(blank=True, null=True)
+    zipcode = models.CharField(max_length=6)
     city = models.CharField(max_length=100)
     phone = models.CharField(max_length=12)
-    description = models.TextField(help_text='Descriu informació necessaria de la perruqueria')
+    description = models.TextField(help_text='Describe la información necesaria de la peluquería')
     url = models.URLField(blank=True, null=True)
     publish_date = models.DateField(auto_now=True)
 
@@ -27,7 +27,7 @@ class AdminHairDressing(models.Model):
 class Hairdresser(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
-    speciality = models.TextField(max_length=100, help_text= ' Redacta les teves funcionalitats')
+    speciality = models.TextField(max_length=100, help_text= 'Redacta las especialidades del peluquero')
     hairdressing = models.ForeignKey(AdminHairDressing, related_name='hairdressers')
 
     def __str__(self):

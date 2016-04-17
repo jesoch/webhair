@@ -10,8 +10,14 @@
             <b>Peluquero: </b> {{ citation.id_schedule.hairdresser.name }} <br />
             <b>Dia: </b> {{ citation.id_schedule.get_day_display }} <br />
             <b>Hora: </b> {{ citation.id_schedule.get_hour_display }}
+        <div>
+            <form action="{% url 'citation_delete' %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="id_citation" value="{{ citation.id }}">
+                <input type="submit" value="Eliminar Cita">
+            </form>
+        </div>
         </div>
         {% endif %}
-    {% empty %}No hay citas
     {% endfor %}
 {% endblock	%}
