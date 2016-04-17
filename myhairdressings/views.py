@@ -1,14 +1,14 @@
 from django.core.urlresolvers import reverse
-from django.http import HttpResponse, Http404
-from django.shortcuts import get_object_or_404, render_to_response
+from django.http import HttpResponse, Http404, request
+from django.shortcuts import get_object_or_404, render_to_response, redirect
 from django.views.generic import DetailView
 from django.views.generic.edit import CreateView
-from .models import AdminHairDressing, Hairdresser, Citation
+from .models import AdminHairDressing, Hairdresser, Citation, Schedule
 from django.contrib.auth.models import User
-from .forms import CitationForm
 from django.template.loader import get_template
 from django.template import Context
 from django.views.generic import DetailView, ListView, UpdateView
+from .forms import CitationForm
 
 
 # Create your views here.
@@ -20,7 +20,6 @@ def mainpage(request):
     })
     output = template.render(variables)
     return HttpResponse(output)
-
 
 class HairdressingDetail(DetailView):
     model = AdminHairDressing
@@ -46,13 +45,12 @@ class Citations(DetailView):
         context = super(Citations,self).get_context_data(**kwargs)
         return context
 
-class CitationCreate(CreateView):
-    model = Citation
-    template_name = 'hairdresser_detail.html'
-    form_class = CitationForm
-
-    def form_valid(self, form):
-        form.instance.user = self.request.user
-        form.instance.id_schedule = Citation.objects.get(id=self.kwargs['pk'])
-        print (form.instance.id_schedule)
-        return super(CitationCreate, self).form_valid(form)
+def CreateCitation(request):
+    u = request.POST.get('user')
+    us = User.objects.filter('username',u)
+    s = request.POST.get('schedule')
+    sc = Schedule.objects.filter('id', s)
+    
+    c = Citation(id_user=us, id_schedule=sc)
+    c.save()
+    return redirect('/')

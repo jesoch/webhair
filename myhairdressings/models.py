@@ -24,17 +24,6 @@ class AdminHairDressing(models.Model):
     def __str__(self):
         return self.name
 
-'''
-class Clients(models.Model):
-    id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50)
-    phone = models.CharField(max_length=9)
-
-    def __str__(self):
-        return self.name
-'''
-
-
 class Hairdresser(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)

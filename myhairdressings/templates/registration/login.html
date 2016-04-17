@@ -1,16 +1,28 @@
 {% extends "index.html" %}
 {% block content %}
-	<h1>User Login</h1>
-	{% if form.has_errors %}
-	<p>Error validant usuari.</p>
-	{% endif %}
-	<form method="post" action=".">
-	<p><label for="id_username">User:</label>
-	{{ form.username }}</p>
-	<p><label for="id_password">Pass:</label>
-	{{ form.password }}</p>
-	<input type="hidden" name="next" value="/" />
-	<input type="submit" value="login" />
-	{% csrf_token %}
-	</form>
-{% endblock	%}
+        <form class="login-form" action="." method="post">
+            {% if form.errors %}
+                <div class="alert">Los datos de acceso no son validos.</div>
+            {% endif %}
+        {% csrf_token %}
+
+        <div>
+            <label for="username">Usuario:</label>
+            <div>
+                <input type="text" id="username" name="username"  placeholder="Usuario">
+            </div>
+        </div>
+        <div>
+            <label for="password">Contraseña:</label>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="hidden" name="next" value="/" />
+                <input class="button" type="submit" value="Entrar" />
+            </div>
+        </div>
+        </form>
+{% endblock %}

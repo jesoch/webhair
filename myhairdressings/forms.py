@@ -1,7 +1,7 @@
-from django.forms import ModelForm
-from .models import Citation
+from django.forms import forms
+from myhairdressings.models import Citation
 
-class CitationForm(ModelForm):
+class CitationForm(forms.Form):
     class Meta:
         model = Citation
-        exclude = ('date',)
+        fields = ('id_schedule', 'id_user',)

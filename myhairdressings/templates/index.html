@@ -3,32 +3,43 @@
 <head>
     {% load static %}
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
     <meta charset="UTF-8">
     <title>Hairdressing App</title>
 </head>
 <body>
-<div id="wrapper">
-    <div id="header">
-        <div id="header-title"><h1>Hairdressing App</h1></div>
-        <div id="login-form">{% if user.username %} Bienvenido {{ user.username }}! | <a href="/logout">Desconectar</a> {% else %} <a href="/login">Acceder</a> {% endif %}</div>
-    </div>
+	<div id="header">
+		<h1>Hairdressing App</h1>
+            {% if user.username %} Bienvenido {{ user.username }}! | <a href="/logout">Desconectar</a> {% else %} <a href="/login">Acceder</a> {% endif %}
+	</div>
 
-    <div id="main">
-        <div id="content-left">
-            <u>
+	<div id="content">
+		<div id="sidebar">
+			<ul>
+                <li><a href="/">Principal</a></li>
                 <li><a href="/hairdressing">Listar Peluquerias</a></li>
                 {% if user.username %}
-                <li><a href="/citations">Ver mis Citas</a></li>
+                    <li><a href="/citations">Ver mis Citas</a></li>
                 {% endif %}
-            </u>
-        </div>
+            </ul>
+		</div>
 
-        <div id="content">
+		<div id="main-content">
             {% block content %}
-			    {% if error_message	%}<p><strong>{{	error_message }}</strong></p>{% endif %}
-		    {% endblock	%}
-        </div>
-    </div>
-</div>
+                <h2>Webhair:</h2>
+                    <h3>Sistemes i Tecnologies Web</h3>
+                    <b>Practica 1</b><br />
+                    <b>Fecha:</b> 17/04/2016<br />
+                    <b>Integrantes del Grupo:</b>
+                    <ul>
+                        <li>Jennifer Soliz</li>
+                        <li>Albert Grau</li>
+                    </ul>
+            {% endblock	%}
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
 </body>
 </html>

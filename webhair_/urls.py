@@ -1,10 +1,8 @@
 from django.conf.urls import include, url
 from django.contrib import admin
+from myhairdressings import views
 from myhairdressings.views import *
-from django.contrib.auth.models import User
-from django.views.generic import DetailView, ListView, UpdateView
-from django.shortcuts import get_object_or_404
-
+from django.views.generic import DetailView, ListView
 
 urlpatterns = [
 
@@ -12,6 +10,7 @@ urlpatterns = [
     url(r'^$', mainpage, name='Home'),
     url(r'^login/$', 'django.contrib.auth.views.login'),
     url(r'^logout/$', 'django.contrib.auth.views.logout',{'next_page': '/'}),
+    url(r'^citation/create/$', views.CreateCitation, name='citation_create'),
 
     # Hairdressings
     url(r'^hairdressing/$',
@@ -40,9 +39,4 @@ urlpatterns = [
             context_object_name='CitationsList',
             template_name='citations.html'),
         name='citations'),
-
-    # Create citation
-    url(r'^citation/create/$',
-        CitationCreate.as_view(),
-        name='citation_create'),
 ]

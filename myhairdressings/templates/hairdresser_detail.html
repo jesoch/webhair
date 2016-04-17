@@ -15,17 +15,18 @@
 </ul>
 
 <form action="{% url 'citation_create' %}" method="POST">
-<select name="id">
+{% csrf_token %}
+<select name="schedule">
 {% for schedule in hairdresser.schedule.all %}
     <option value="{{ schedule.id }}">
         {{ schedule.get_day_display }}
-        {{schedule.get_hour_display}}
+        {{ schedule.get_hour_display }}
     </option>
 {% empty %}<li>No hay horarios para este peluquero.</li>
 {% endfor %}
 </select> <br /><br />
+<input type="text" name="user" value="{{ user }}">
 <input class="button" type="submit" value="Pedir Cita">
-{% csrf_token %}
 </form>
 
 <div class="hr"></div>
