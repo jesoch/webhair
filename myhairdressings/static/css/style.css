@@ -1,0 +1,13 @@
+body{background-color: red;}
+
+#wrapper {}
+
+#header {top:0; border:solid 1px #000;}
+
+#header-title{border:solid 1px #000;}
+
+#login-form{border:solid 1px #000;}
+
+#content-left{border:solid 1px #000;}
+
+#content{border:solid 1px #000;}
