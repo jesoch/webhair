@@ -10,18 +10,32 @@
 <body>
 	<div id="header">
 		<h1>Hairdressing App</h1>
-            {% if user.username %} Bienvenido {{ user.username }}! | <a href="/logout">Desconectar</a> {% else %} <a href="/login">Acceder</a> {% endif %}
+    <div id="header-right">
+            {% if user.username %}Bienvenido {{ user.username }}! | <a href="/logout">Desconectar</a> {% else %} <input class="button" type="button" value="Acceder" onclick="location.href='/login';"/>{% endif %}
+    </div>
 	</div>
 
 	<div id="content">
 		<div id="sidebar">
 			<ul>
-                <li><a href="/">Principal</a></li>
-                <li><a href="/hairdressing">Listar Peluquerias</a></li>
-                {% if user.username %}
-                    <li><a href="/citations">Ver mis Citas</a></li>
-                {% endif %}
-            </ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/hairdressing">Listar Peluquerias</a></li>
+      </ul>
+      {% if user.username %}
+      <div class="menuItem">Menú Usuario</div>
+      <ul>
+             <li><a href="/citations">Ver mis Citas</a></li>
+      </ul>
+      {% endif %}
+
+      {% if user.is_superuser %}
+
+      <div class="menuItem">Menú Administrador</div>
+      <ul>
+            <li><a href="/hairdressing">Modificar Peluquerías</a></li>
+      </ul>
+      {% endif %}
+
 		</div>
 
 		<div id="main-content">

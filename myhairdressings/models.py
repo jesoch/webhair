@@ -13,7 +13,7 @@ class AdminHairDressing(models.Model):
     zipcode = models.CharField(max_length=6)
     city = models.CharField(max_length=100)
     phone = models.CharField(max_length=12)
-    description = models.TextField(help_text='Describe la información necesaria de la peluquería')
+    description = models.TextField(help_text='Describe la informacion necesaria de la peluqueria')
     url = models.URLField(blank=True, null=True)
     publish_date = models.DateField(auto_now=True)
 
@@ -37,7 +37,7 @@ class Hairdresser(models.Model):
 class Schedule(models.Model):
     id = models.AutoField(primary_key=True)
     DAY_CHOICES = ((1, 'Lunes'), (2, 'Martes'), (3, 'Miercoles'), (4, 'Jueves'), (5, 'Viernes'), (6, 'Sabado'))
-    day = models.PositiveSmallIntegerField('Día', blank=False, default=1, choices=DAY_CHOICES)
+    day = models.PositiveSmallIntegerField('Dia', blank=False, default=1, choices=DAY_CHOICES)
     HOUR_CHOICES = ((9, '09:00h'),(10, '10:00h'),(11, '11:00h'),(12, '12:00h'),(13, '13:00h'),(14, '14:00h'),(15, '15:00h'),
                     (16, '16:00h'),(17, '17:00h'),(18, '18:00h'),(19, '19:00h'),(20, '20:00h'),)
     hour = models.PositiveSmallIntegerField('Hora', blank=False, default=1, choices=HOUR_CHOICES)
