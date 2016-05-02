@@ -60,7 +60,7 @@ class Migration(migrations.Migration):
             name='user',
         ),
         migrations.DeleteModel(
-            name='AdminHairDressing',
+            name='AdminHairdressing',
         ),
         migrations.DeleteModel(
             name='client',

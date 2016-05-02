@@ -1,7 +1,5 @@
-from django.forms import forms
-from myhairdressings.models import Citation
+from django import forms
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
 
 class UploadForm(forms.Form):
     image = forms.FileField(
@@ -9,7 +7,6 @@ class UploadForm(forms.Form):
     )
 
 class RegisterUserForm(forms.Form):
-
     username = forms.CharField(min_length=5)
     email = forms.EmailField()
     password = forms.CharField(min_length=5, widget=forms.PasswordInput())

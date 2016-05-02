@@ -1,13 +1,13 @@
 from rest_framework.fields import CharField
 from rest_framework.relations import HyperlinkedRelatedField, HyperlinkedIdentityField
 from rest_framework.serializers import HyperlinkedModelSerializer
-from .models import AdminHairDressing, Hairdresser, Schedule, Citation
+from .models import *
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
 class HairdressingSerializer(HyperlinkedModelSerializer):
     class Meta:
-        model = AdminHairDressing
+        model = Hairdressing
         fields = ('id', 'name', 'street', 'number', 'zipcode','phone', 'description', )
 
 class HairdresserSerializer(HyperlinkedModelSerializer):

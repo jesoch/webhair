@@ -5,7 +5,7 @@ from datetime import date
 
 # Create your models here.
 
-class AdminHairDressing(models.Model):
+class Hairdressing(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=150)
     street = models.CharField(max_length=200)
@@ -29,7 +29,7 @@ class Hairdresser(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
     speciality = models.TextField(max_length=100, help_text= 'Redacta las especialidades del peluquero')
-    hairdressing = models.ForeignKey(AdminHairDressing, related_name='hairdressers')
+    hairdressing = models.ForeignKey(Hairdressing, related_name='hairdressers')
 
     def __str__(self):
         return self.name

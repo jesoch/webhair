@@ -3,7 +3,7 @@ from django.http import HttpResponse, Http404, request
 from django.shortcuts import get_object_or_404, render_to_response, redirect, render
 from django.views.generic import DetailView
 from django.views.generic.edit import CreateView
-from .models import AdminHairDressing, Hairdresser, Citation, Schedule
+from myhairdressings.models import *
 from django.contrib.auth.models import User
 from django.template.loader import get_template
 from django.template import Context
@@ -30,7 +30,7 @@ def mainpage(request):
     return HttpResponse(output)
 
 class HairdressingDetail(DetailView):
-    model = AdminHairDressing
+    model = Hairdressing
     template_name = 'hairdressing_detail.html'
 
     def get_context_data(self, **kwargs):
@@ -101,9 +101,9 @@ def register(request):
 
         form = RegisterUserForm()
 
-        context = {'form': form}
+    context = {'form': form}
 
-        return render(request, 'registration/register.html', context)
+    return render(request, 'registration/register.html', context)
 
 def thanks_view(request, username):
     return render(request, 'registration/thanks.html', {'username': username})
@@ -111,18 +111,18 @@ def thanks_view(request, username):
 #APIS
 
 class APIHairdressingList(generics.ListAPIView):
-    model = AdminHairDressing
+    model = Hairdressing
     serializer_class = HairdressingSerializer
 
     def get_queryset(self):
-        return AdminHairDressing.objects.all()
+        return Hairdressing.objects.all()
 
 class APIHairdressingDetail(generics.RetrieveUpdateDestroyAPIView):
-    model = AdminHairDressing
+    model = Hairdressing
     serializer_class = HairdressingSerializer
 
     def get_queryset(self):
-        return AdminHairDressing.objects.all()
+        return Hairdressing.objects.all()
 
 
 class APIHairdresserList(generics.ListAPIView):

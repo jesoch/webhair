@@ -11,14 +11,14 @@ urlpatterns = [
     url(r'^$', mainpage, name='Home'),
     url(r'^login/$', 'django.contrib.auth.views.login', kwargs={'template_name': 'registration/login.html'}, name='login'),
     url(r'^logout/$', 'django.contrib.auth.views.logout', kwargs={'next_page': '/'}),
-    url(r'^register/$', views.register, name='registre'),
+    url(r'^register/$', views.register, name='register'),
     url(r'^citation/create/$', views.CreateCitation, name='citation_create'),
     url(r'^citation/delete/$', views.DeleteCitation, name='citation_delete'),
 
     # Hairdressings
     url(r'^hairdressing/$',
         ListView.as_view(
-            queryset=AdminHairDressing.objects.all(),
+            queryset=Hairdressing.objects.all(),
             context_object_name='HairdressingList',
             template_name='hairdressingslist.html'),
         name='hairdressingslist'),
@@ -67,4 +67,3 @@ urlpatterns += patterns('',
     url(r'^api/user/$', APIUserList.as_view(), name='user_all'),
     url(r'^api/user/(?P<pk>\d+)/$', APIUserDetail.as_view(), name='user_detail'),
 )
-
