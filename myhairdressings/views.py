@@ -1,6 +1,6 @@
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse, Http404, request
-from django.shortcuts import get_object_or_404, render_to_response, redirect
+from django.shortcuts import get_object_or_404, render_to_response, redirect, render
 from django.views.generic import DetailView
 from django.views.generic.edit import CreateView
 from .models import AdminHairDressing, Hairdresser, Citation, Schedule
@@ -8,6 +8,7 @@ from django.contrib.auth.models import User
 from django.template.loader import get_template
 from django.template import Context
 from django.views.generic import DetailView, ListView, UpdateView
+from myhairdressings.forms import *
 from .serializers import HairdressingSerializer, HairdresserSerializer, ScheduleSerializer, CitationSerializer, UserSerializer
 
 from django.views.generic.base import TemplateResponseMixin
@@ -68,6 +69,44 @@ def DeleteCitation(request):
     citation.delete()
     return redirect('/citations')
 
+
+
+def upload_file(request):
+    if request.method == 'POST':
+        form = UploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            newimg = Hairdressing(filename = request.POST['filename'],docfile = request.FILES['imgfile'])
+            newimg.save(form)
+            return redirect("uploads")
+
+def register(request):
+    if request.method == 'POST':
+
+        form = RegisterUserForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            cleaned_data = form.cleaned_data
+            username = cleaned_data.get('username')
+            password = cleaned_data.get('password')
+            email = cleaned_data.get('email')
+
+            user_model = User.objects.create_user(username=username, password=password)
+
+            user_model.email = email
+
+            user_model.save()
+
+            return redirect(reverse('registration.thanks', kwargs={'username': username}))
+    else:
+
+        form = RegisterUserForm()
+
+        context = {'form': form}
+
+        return render(request, 'registration/register.html', context)
+
+def thanks_view(request, username):
+    return render(request, 'registration/thanks.html', {'username': username})
 
 #APIS
 

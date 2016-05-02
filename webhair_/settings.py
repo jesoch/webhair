@@ -87,6 +87,9 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
+LOGIN_URL = '/myhairdressing/login/'
+
+LOGOUT_URL = 'myhairdressing/logout'
 
 TIME_ZONE = 'Europe/Madrid'
 

@@ -9,8 +9,9 @@ urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
     url(r'^$', mainpage, name='Home'),
-    url(r'^login/$', 'django.contrib.auth.views.login'),
-    url(r'^logout/$', 'django.contrib.auth.views.logout',{'next_page': '/'}),
+    url(r'^login/$', 'django.contrib.auth.views.login', kwargs={'template_name': 'registration/login.html'}, name='login'),
+    url(r'^logout/$', 'django.contrib.auth.views.logout', kwargs={'next_page': '/'}),
+    url(r'^register/$', views.register, name='registre'),
     url(r'^citation/create/$', views.CreateCitation, name='citation_create'),
     url(r'^citation/delete/$', views.DeleteCitation, name='citation_delete'),
 
@@ -41,6 +42,12 @@ urlpatterns = [
             context_object_name='CitationsList',
             template_name='citations.html'),
         name='citations'),
+
+    url(
+        r'thanks/(?P<username>[\w]+)/$',
+        views.thanks_view,
+        name='registration.thanks'
+    ),
 ]
 
 # API Restfull

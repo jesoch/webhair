@@ -16,6 +16,7 @@ class AdminHairDressing(models.Model):
     description = models.TextField(help_text='Describe la informacion necesaria de la peluqueria')
     url = models.URLField(blank=True, null=True)
     publish_date = models.DateField(auto_now=True)
+    image = models.FileField(upload_to='myhairdressings/static/img')
 
     def get_absolute_url(self):
         return reverse('hairdressing_detail', kwargs={'pk': self.pk})
