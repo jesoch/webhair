@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Hairdressing App</title>
+</head>
+<body>
+	<div id="header">
+		<h1>Hairdressing App</h1>
+    <div id="header-right">
+            {% if user.username %}Bienvenido {{ user.username }}! | <a href="/logout">Desconectar</a> {% else %} <input class="button" type="button" value="Acceder" onclick="location.href='/login';"/>{% endif %}
+    </div>
+	</div>
+
+    	<div id="content">
+		<div id="sidebar">
+			<ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/hairdressing">Listar Peluquerias</a></li>
+      </ul>
+      {% if user.username %}
+      <div class="menuItem">Menú Usuario</div>
+      <ul>
+             <li><a href="/citations">Ver mis Citas</a></li>
+      </ul>
+      {% endif %}
+
+      {% if user.is_superuser %}
+
+      <div class="menuItem">Menú Administrador</div>
+      <ul>
+            <li><a href="/admin" target="_blank">Django Administration</a></li>
+            <li><a href="/hairdressing">Modificar Peluquerías</a></li>
+      </ul>
+      {% endif %}
+
+		</div>
+
+		<div id="main-content">
+            {% block content %}
+                <h2>Webhair:</h2>
+                    <h3>Sistemes i Tecnologies Web</h3>
+                    <b>Practica 1</b><br />
+                    <b>Fecha:</b> 17/04/2016<br />
+                    <b>Integrantes del Grupo:</b>
+                    <ul>
+                        <li>Jennifer Soliz</li>
+                        <li>Albert Grau</li>
+                    </ul>
+                <h2>API:</h2>
+                    <ul>
+                        <li><a href="/api/hairdressing">Peluquerias</a></li>
+                        <li><a href="/api/hairdresser">Peluqueros</a></li>
+                        <li><a href="/api/user">Usuarios</a></li>
+                        <li><a href="/api/schedule">Calendarios</a></li>
+                        <li><a href="/api/citation">Citas</a></li>
+                    </ul>
+            {% endblock	%}
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+</body>
+</html>

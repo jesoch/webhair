@@ -1,30 +1,21 @@
-from django.core.urlresolvers import reverse
-from django.http import HttpResponse, Http404, request
-from django.shortcuts import get_object_or_404, render_to_response, redirect, render
-from django.views.generic import DetailView
-from django.views.generic.edit import CreateView
-from myhairdressings.models import *
-from django.contrib.auth.models import User
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
 from django.template.loader import get_template
 from django.template import Context
-from django.views.generic import DetailView, ListView, UpdateView
+from django.views.generic import DetailView
 from myhairdressings.forms import *
-from .serializers import HairdressingSerializer, HairdresserSerializer, ScheduleSerializer, CitationSerializer, UserSerializer
-
-from django.views.generic.base import TemplateResponseMixin
+from .serializers import *
 
 from rest_framework import generics
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
 from rest_framework.reverse import reverse
 
 
-# Create your views here.
 
 def mainpage(request):
     template = get_template('index.html')
     variables = Context({
-        'user': request.user
+        'user': request.user,
+        'titleApp': 'HairApp'
     })
     output = template.render(variables)
     return HttpResponse(output)

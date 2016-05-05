@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
-from datetime import date
 
 # Create your models here.
 
@@ -16,7 +15,11 @@ class Hairdressing(models.Model):
     description = models.TextField(help_text='Describe la informacion necesaria de la peluqueria')
     url = models.URLField(blank=True, null=True)
     publish_date = models.DateField(auto_now=True)
-    image = models.FileField(upload_to='myhairdressings/static/img')
+    image = models.FileField(upload_to='myhairdressings/static/img/hairdressings')
+
+    def getImagePath(self):
+        img = str(self.image)
+        return img.replace('myhairdressings','')
 
     def get_absolute_url(self):
         return reverse('hairdressing_detail', kwargs={'pk': self.pk})

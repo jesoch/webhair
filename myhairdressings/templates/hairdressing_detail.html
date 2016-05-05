@@ -6,13 +6,15 @@
 </h1>
 <h2>Datos de la Peluquería:</h2>
 
+<div style="height:150px;"><img src="{{ hairdressing.getImagePath }}" /></div>
+
 <ul>
 	<li>Nombre: {{ hairdressing.name }}</li>
     <li>Dirección: {{ hairdressing.street }}, {{ hairdressing.number }}</li>
     <li>Ciudad: {{ hairdressing.city }}</li>
     <li>Teléfono: {{ hairdressing.phone }}</li>
-
 </ul>
+
 <h2>Peluqueros:</h2>
 <ul>
 {% for hairdresser in hairdressing.hairdressers.all %}

@@ -1,28 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/myhairdressings/views.py" line="61" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/myhairdressings/views.py" line="52" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3161491a-e2db-4158-bc1a-62962c52b662" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/templates/registration/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/templates/registration/thanks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/flash/ZeroClipboard.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/img/components.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/img/devices.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/img/expo-lyft.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/img/expo-newsweek.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/img/expo-riot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/img/expo-vogue.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/img/sass-less.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/1589.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/1589_8Q3STlq.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/1589_EkgbvkH.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/Raffel-Pages.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/hairdressings/1589.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/hairdressings/Raffel-Pages.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/slider/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/img/slider/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/brand/bootstrap-outline.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/brand/bootstrap-punchout.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/brand/bootstrap-solid.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/css/docs.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/css/docs.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/css/ie10-viewport-bug-workaround.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/css/src/docs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/css/src/pygments-manni.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/customize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/docs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/ie-emulation-modes-warning.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/ie10-viewport-bug-workaround.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/ie8-responsive-file-warning.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/raw-files.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/src/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/src/customizer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/Blob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/FileSaver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/ZeroClipboard.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/anchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/autoprefixer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/holder.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/jszip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/less.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/assets/js/vendor/uglify.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/css/carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myhairdressings/static/dist/js/npm.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/100755" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myhairdressings/templates/index.html" afterPath="$PROJECT_DIR$/myhairdressings/templates/index.old.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webhair_.iml" afterPath="$PROJECT_DIR$/.idea/webhair_.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/forms.py" afterPath="$PROJECT_DIR$/myhairdressings/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/apps.py" afterPath="$PROJECT_DIR$/myhairdressings/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/migrations/0005_adminhairdressing_image.py" afterPath="$PROJECT_DIR$/myhairdressings/migrations/0005_adminhairdressing_image.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/migrations/0006_remove_adminhairdressing_image.py" afterPath="$PROJECT_DIR$/myhairdressings/migrations/0006_remove_adminhairdressing_image.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/migrations/0007_auto_20160502_1249.py" afterPath="$PROJECT_DIR$/myhairdressings/migrations/0007_auto_20160502_1249.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/migrations/0008_hairdressing_image.py" afterPath="$PROJECT_DIR$/myhairdressings/migrations/0008_hairdressing_image.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/models.py" afterPath="$PROJECT_DIR$/myhairdressings/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/templates/hairdressing_detail.html" afterPath="$PROJECT_DIR$/myhairdressings/templates/hairdressing_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/templates/index.html" afterPath="$PROJECT_DIR$/myhairdressings/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/templates/registration/login.html" afterPath="$PROJECT_DIR$/myhairdressings/templates/registration/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myhairdressings/views.py" afterPath="$PROJECT_DIR$/myhairdressings/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhair_/settings.py" afterPath="$PROJECT_DIR$/webhair_/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webhair_/urls.py" afterPath="$PROJECT_DIR$/webhair_/urls.py" />
     </list>
-    <list id="47d5fe30-8d06-4bfb-8668-12d9ee3ace54" name="Failed commit: Default" comment="register html correct">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-    </list>
     <ignored path="webhair_.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="db.sqlite3" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,63 +110,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myhairdressings/views.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="165">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myhairdressings/forms.py">
+      <file leaf-file-name="index.old.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.old.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webhair_/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/thanks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myhairdressings/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="615">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="59" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -118,21 +140,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webhair_/settings.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myhairdressings/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="98">
+              <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myhairdressings/admin.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myhairdressings/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="-45">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webhair_/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="121" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myhairdressings/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+              <folding>
+                <element signature="e#181#225#0#HTML" expanded="true" />
+                <element signature="e#408#435#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webhair_/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -161,10 +234,8 @@
         <option value="$PROJECT_DIR$/myhairdressings/urls.py" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/hairdressing/initial.html" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/css/style.css" />
-        <option value="$PROJECT_DIR$/myhairdressings/templates/hairdressing_detail.html" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/userpage.html" />
         <option value="$PROJECT_DIR$/myhairdressings/static/bootstrap/css/bootstrap-responsive.min.css" />
-        <option value="$PROJECT_DIR$/myhairdressings/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/hairdressingslist.html" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/home.html" />
         <option value="$PROJECT_DIR$/myhairdressings/static/css/style.css" />
@@ -173,14 +244,17 @@
         <option value="$PROJECT_DIR$/myhairdressings/templates/citation_created.html" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/citations.html" />
         <option value="$PROJECT_DIR$/myhairdressings/serializers.py" />
-        <option value="$PROJECT_DIR$/myhairdressings/templates/index.html" />
-        <option value="$PROJECT_DIR$/webhair_/settings.py" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/registration/register.html" />
         <option value="$PROJECT_DIR$/myhairdressings/templates/registration/thanks.html" />
-        <option value="$PROJECT_DIR$/myhairdressings/models.py" />
-        <option value="$PROJECT_DIR$/webhair_/urls.py" />
-        <option value="$PROJECT_DIR$/myhairdressings/views.py" />
         <option value="$PROJECT_DIR$/myhairdressings/forms.py" />
+        <option value="$PROJECT_DIR$/myhairdressings/templates/hairdressing_detail.html" />
+        <option value="$PROJECT_DIR$/myhairdressings/templates/page.html" />
+        <option value="$PROJECT_DIR$/myhairdressings/models.py" />
+        <option value="$PROJECT_DIR$/webhair_/settings.py" />
+        <option value="$PROJECT_DIR$/myhairdressings/views.py" />
+        <option value="$PROJECT_DIR$/myhairdressings/templates/index.html" />
+        <option value="$PROJECT_DIR$/myhairdressings/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/webhair_/urls.py" />
       </list>
     </option>
   </component>
@@ -191,10 +265,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="x" value="57" />
+    <option name="y" value="-4" />
+    <option name="width" value="1863" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,7 +295,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,15 +359,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webhair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webhair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myhairdressings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webhair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webhair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myhairdressings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db.sqlite3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -544,9 +658,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="webhair_.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../virtual/bin/python3.4" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="webhair_" />
@@ -579,6 +693,14 @@
       <option name="presentableId" value="Default" />
       <updated>1460073184204</updated>
     </task>
+    <task id="LOCAL-00001" summary="register html correct">
+      <created>1462447307797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1462447307797</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -596,21 +718,22 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13944224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13902308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.50269026" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32043344" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3031536" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31943032" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -642,15 +765,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myhairdressings/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="78" column="32" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.old.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -661,9 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="50" column="82" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -685,11 +797,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="46" />
-          <folding />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.old.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
@@ -700,9 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="41" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,7 +850,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -748,7 +861,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -756,9 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,30 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/hairdressing_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="60" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -869,6 +957,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myhairdressings/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/hairdressing_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="59" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myhairdressings/templates/hairdresser_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -879,67 +1003,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webhair_/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/thanks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myhairdressings/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="27" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="98">
+          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webhair_/urls.py">
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myhairdressings/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="225">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="e#181#225#0#HTML" expanded="true" />
+            <element signature="e#408#435#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myhairdressings/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myhairdressings/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webhair_/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="121" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myhairdressings/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

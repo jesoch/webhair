@@ -3,7 +3,6 @@ from django.contrib import admin
 from myhairdressings import views
 from myhairdressings.views import *
 from django.views.generic import DetailView, ListView
-from django.contrib.auth.models import User
 
 urlpatterns = [
 
